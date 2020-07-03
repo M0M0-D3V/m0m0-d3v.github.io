@@ -15,14 +15,14 @@
     <!-- NAVBAR Image and text -->
     <nav class="navbar navbar-dark navbar-expand navbar-lg bg-dark">
       <a class="navbar-brand" href="#">
-        <img
+        <!-- <img
           src="/docs/4.0/assets/brand/bootstrap-solid.svg"
           width="30"
           height="30"
           class="d-inline-block align-top"
           alt=""
-        />
-        Navbar
+        /> -->
+        ¯\_(ツ)_/¯
       </a>
       <button
         class="navbar-toggler"
@@ -47,24 +47,20 @@
               class="nav-link text-warning"
               href="#"
               data-toggle="modal"
-              data-target="#exampleModalCenter"
+              data-target="#aboutMe"
               >About Me</a
             >
           </li>
           <li class="nav-item">
             <a
               class="nav-link text-success"
-              href="#"
-              data-toggle="modal"
-              data-target="#exampleModalCenter"
+              href="https://www.linkedin.com/in/monicaaprilhong/" target="_blank"
               >LinkedIn</a
             >
             <li class="nav-item">
               <a
                 class="nav-link text-success"
-                href="#"
-                data-toggle="modal"
-                data-target="#exampleModalCenter"
+                href="https://github.com/M0M0-D3V?tab=repositories" target="_blank"
                 >GitHub</a
               >
             </li>
@@ -74,7 +70,7 @@
               class="nav-link text-primary"
               href="#"
               data-toggle="modal"
-              data-target="#exampleModalCenter"
+              data-target="#meetMarket"
               >MeetMarket Info</a
             >
           </li>
@@ -83,7 +79,7 @@
               class="nav-link text-primary"
               href="#"
               data-toggle="modal"
-              data-target="#exampleModalCenter"
+              data-target="#kindWords"
               >KindWords Info</a
             >
           </li>          
@@ -92,7 +88,7 @@
               class="nav-link text-primary"
               href="#"
               data-toggle="modal"
-              data-target="#exampleModalCenter"
+              data-target="#demonSlayer"
               >DemonSlayer Info</a
             >
           </li>
@@ -101,7 +97,7 @@
               class="nav-link text-primary"
               href="#"
               data-toggle="modal"
-              data-target="#exampleModalCenter"
+              data-target="#activityCenter"
               >Activity Center Info</a
             >
           </li>
@@ -112,19 +108,19 @@
       </div>
     </nav>
 
-    <!-- Modal -->
+    <!-- MODAL ABOUT ME-->
     <div
-      class="modal fade"
-      id="exampleModalCenter"
+      class="modal fade bd-example-modal-lg"
+      id="aboutMe"
       tabindex="-1"
       role="dialog"
-      aria-labelledby="exampleModalCenterTitle"
+      aria-labelledby="aboutMeTitle"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+            <h5 class="modal-title" id="aboutMeLongTitle">About Me</h5>
             <button
               type="button"
               class="close"
@@ -135,29 +131,189 @@
             </button>
           </div>
           <div class="modal-body">
-            ...
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus id iste quas blanditiis sit tempora hic commodi corporis, non fugit sed qui magni a quod tenetur laborum eaque quos amet!
           </div>
           <div class="modal-footer">
             <button
               type="button"
-              class="btn btn-secondary"
+              class="btn btn-secondary btn-sm"
               data-dismiss="modal"
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
           </div>
         </div>
       </div>
     </div>
+<!-- END MODAL ABOUT ME -->
+    <!-- MODAL ABOUT MeetMarket-->
+    <div
+      class="modal fade bd-example-modal-lg"
+      id="meetMarket"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="meetMarketTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="meetMarketLongTitle">Meet Market - Python Django</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <a href="https://github.com/M0M0-D3V/MeetMarket" target="_blank" role="button" class="btn btn-outline-primary btn-sm">View Project on GitHub</a>
+            <iframe src="https://m0m0-d3v.github.io/MeetMarket/" style="border:none;" width="100%"></iframe>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary btn-sm"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- END MODAL ABOUT MeetMarket -->
+    <!-- MODAL ABOUT KindWords-->
+    <div
+      class="modal fade bd-example-modal-lg"
+      id="kindWords"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="kindWordsTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="kindWordsLongTitle">KindWords - MERN</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <a href="https://github.com/M0M0-D3V/KindWords" target="_blank" role="button" class="btn btn-outline-primary btn-sm">View Project on GitHub</a>
+            <iframe src="https://m0m0-d3v.github.io/KindWords/" style="border:none;" width="100%"></iframe>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary btn-sm"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- END MODAL ABOUT KindWords -->
+    <!-- MODAL ABOUT DemonSlayer-->
+    <div
+      class="modal fade bd-example-modal-lg"
+      id="demonSlayer"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="demonSlayerTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="demonSlayerLongTitle">DemonSlayer - C#/Unity</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <a href="https://github.com/M0M0-D3V/DemonSlayerUnity" target="_blank" role="button" class="btn btn-outline-primary btn-sm">View Project on GitHub</a>
+            <iframe src="https://m0m0-d3v.github.io/DemonSlayerUnity/" style="border:none;" width="100%"></iframe>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary btn-sm"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- END MODAL ABOUT DemonSlayer -->
+    <!-- MODAL ABOUT ActivityCenter-->
+    <div
+      class="modal fade bd-example-modal-lg"
+      id="activityCenter"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="activityCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="activityCenterLongTitle">Activity Center - C#/.NET</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <a href="https://github.com/M0M0-D3V/ActivityCenter" target="_blank" role="button" class="btn btn-outline-primary btn-sm">View Project on GitHub</a>
+            <iframe src="https://m0m0-d3v.github.io/ActivityCenter/" style="border:none;" width="100%"></iframe>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary btn-sm"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- END MODAL ABOUT DemonSlayer -->
+
     <!-- JUMBOTRON -->
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="display-4">Hello and Welcome!</h1>
-        <p class="lead">
+        <div class="row">
+          <div class="col-md-6"><h1 class="display-4">Hello and Welcome!</h1>
+          <p class="lead">
           This is where I put some info about myself and put a picture of my
           gooberness to the side -->
-        </p>
+          </p></div>
+          <div class="col-md-6" style="text-align: center; vertical-align: top;">Picture or video here bloop</div>
+      </div>
       </div>
     </div>
     <h1>Here are some of my group projects:</h1>
