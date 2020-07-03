@@ -1,7 +1,16 @@
+body {
+  background-color: #3b413c;
+  color: #daf0ee;
+}
+.jumbotron {
+  background-color: #94d1be;
+  color: white;
+}
 .modal-dialog,
 .modal-content {
   /* 80% of window height */
-  height: 80%;
+  height: 90%;
+  /* opacity: 90%; */
 }
 
 .modal-body {
