@@ -12,15 +12,96 @@
     <title>Monica's Portfolio</title>
   </head>
   <body>
-    <!-- Button trigger modal -->
-    <button
-      type="button"
-      class="btn btn-primary"
-      data-toggle="modal"
-      data-target="#exampleModalCenter"
-    >
-      Launch demo modal
-    </button>
+    <!-- NAVBAR Image and text -->
+    <nav class="navbar navbar-dark navbar-expand navbar-lg bg-dark">
+      <a class="navbar-brand" href="#">
+        <img
+          src="/docs/4.0/assets/brand/bootstrap-solid.svg"
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+          alt=""
+        />
+        Navbar
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+              data-toggle="modal"
+              data-target="#exampleModalCenter"
+              >About Me</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+              data-toggle="modal"
+              data-target="#exampleModalCenter"
+              >LinkedIn</a
+            >
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                data-toggle="modal"
+                data-target="#exampleModalCenter"
+                >GitHub</a
+              >
+            </li>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+              data-toggle="modal"
+              data-target="#exampleModalCenter"
+              >MeetMarket GitHub</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+              data-toggle="modal"
+              data-target="#exampleModalCenter"
+              >KindWords GitHub</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+              data-toggle="modal"
+              data-target="#exampleModalCenter"
+              >Activity Center GitHub</a
+            >
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li> -->
+        </ul>
+      </div>
+    </nav>
 
     <!-- Modal -->
     <div
@@ -64,10 +145,10 @@
     <!-- JUMBOTRON -->
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="display-4">Fluid jumbotron</h1>
+        <h1 class="display-4">Hello and Welcome!</h1>
         <p class="lead">
-          This is a modified jumbotron that occupies the entire horizontal space
-          of its parent.
+          This is where I put some info about myself and put a picture of my
+          gooberness to the side -->
         </p>
       </div>
     </div>
@@ -89,25 +170,36 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="..." class="d-block w-100" alt="..." />
+          <img
+            src="img/meetmarket.png"
+            class="d-block w-100"
+            alt="meetmarket"
+          />
           <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <!-- SLIDE 1 -->
+            <h5>MeetMarket</h5>
+            <p>CraigsList inspired Peer-to-Peer platform with a facelift</p>
           </div>
         </div>
         <div class="carousel-item">
           <img src="..." class="d-block w-100" alt="..." />
           <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="..." class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
+            <!-- SLIDE 2 -->
+            <h5>KindWords</h5>
             <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              Multi-user message & response system with real time chat features
+              in an immersive environment
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <!-- SLIDE 3 -->
+            <h5>Activity Center</h5>
+            <p>
+              Community centered calendaring system where users can post and
+              participate in activities
             </p>
           </div>
         </div>
