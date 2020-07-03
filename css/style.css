@@ -22,5 +22,13 @@ body {
   overflow-y: scroll;
   color: #3b413c;
 }
+.navbar-dark {
+  background-color: #3b413c;
+}
+.navbar .dropdown-menu {
+  background-color: #3b413c;
+  color: #94d1be;
+}
+
 /* colors generated from 
 https://coolors.co/ffffff-3b413c-9db5b2-daf0ee-94d1be */
