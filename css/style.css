@@ -5,6 +5,8 @@ body {
 .jumbotron {
   background-color: #94d1be;
   color: white;
+  border-radius: 20px;
+  box-shadow: 5px 5px #333333;
 }
 .modal-dialog,
 .modal-content {
