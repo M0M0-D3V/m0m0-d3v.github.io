@@ -67,7 +67,8 @@
                 >GitHub</a
               >
             </li>
-          </li>          
+          </li>  
+                  <!-- DROPDOWN MENU -->
           <li class="nav-item dropdown">
             <a
               class="nav-link text-secondary dropdown-toggle"
@@ -106,6 +107,15 @@
           >Activity Center</a
         >
               </div>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-warning"
+              href="#"
+              data-toggle="modal"
+              data-target="#contactMe"
+              >Contact Me</a
+            >
           </li>
         </ul>
       </div>
@@ -371,7 +381,45 @@
         </div>
       </div>
     </div>
-<!-- END MODAL ABOUT DemonSlayer -->
+<!-- END MODAL ABOUT ActivityCenter -->
+    <!-- MODAL ABOUT ActivityCenter-->
+    <div
+      class="modal fade bd-example-modal-lg"
+      id="contactMe"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="contactMeTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactMeLongTitle">Contact Me <a href="https://github.com/M0M0-D3V/" target="_blank" role="button" class="btn btn-outline-success btn-sm">View Project on GitHub</a></h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            FORM HERE
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary btn-sm"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- END MODAL ABOUT ActivityCenter -->
 
     <!-- JUMBOTRON -->
     <div class="jumbotron jumbotron-fluid">
@@ -379,14 +427,17 @@
     <div class="row">
     <div class="col-md-6"><h1 class="display-4">Hello and Welcome!</h1>
     <p class="lead">
-    This is where I put some info about myself and put a picture of my
-    gooberness to the side -->
+    Thanks for checking out my portfolio page. Please feel free to look around and if you see anything of interest, or have any questions, please let me know by <a href="#"              data-toggle="modal"
+    data-target="#contactMe">
+      Contacting me.
+    </a> :)
     </p></div>
-    <div class="col-md-6" style="text-align: center; vertical-align: top;">Picture or video here bloop
-    <p>some blurb about what techs i know.. maybe icons will be nice</p></div>
+    <div class="col-md-6" style="text-align: center; vertical-align: top;">Picture or video here bloop placeholder
+    <p>Some icons to show what techs I know will be on here soon!</p></div>
     </div>
     </div>
     </div>
+    <!-- END JUMBOTRON -->
     <div class="container">
     <h4>Here are some of my group projects:</h4>
     <hr/>
@@ -497,7 +548,10 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
     </a>
-    </div></div></div>
+    </div>
+  </div>
+  <!-- END CAROUSEL -->
+  </div>
     <!-- BOOTSTRAP SCRIPTS -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

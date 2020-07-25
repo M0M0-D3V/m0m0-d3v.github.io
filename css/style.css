@@ -22,7 +22,8 @@ body {
   overflow-y: scroll;
   color: #3b413c;
 }
-.navbar-dark {
+.navbar-dark,
+.bg-dark {
   background-color: #3b413c;
 }
 .navbar .dropdown-menu {
