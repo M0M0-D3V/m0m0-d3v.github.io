@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-    crossorigin="anonymous"
-    />
-    <link href="css/style.css" rel="stylesheet">
-    <title>Monica's Portfolio</title>
-  </head>
-  <body>
-    
-    <div class="container">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <link href="css/style.css" rel="stylesheet">
+  <title>Monica's Portfolio</title>
+</head>
+
+<body>
+
+  <div class="container">
     <!-- NAVBAR Image and text -->
     <nav class="navbar navbar-dark navbar-expand navbar-lg bg-dark">
       <a class="navbar-brand" href="#">
@@ -27,157 +25,77 @@
         /> -->
         ¯\_(ツ)_/¯
       </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
-            >
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a
-              class="nav-link text-warning"
-              href="#"
-              data-toggle="modal"
-              data-target="#aboutMe"
-              >About Me</a
-            >
+            <a class="nav-link text-warning" href="#" data-toggle="modal" data-target="#aboutMe">About Me</a>
           </li>
           <li class="nav-item">
-            <a
-              class="nav-link text-success"
-              href="https://www.linkedin.com/in/monicaaprilhong/" target="_blank"
-              >LinkedIn</a
-            >
-            <li class="nav-item">
-              <a
-                class="nav-link text-success"
-                href="https://github.com/M0M0-D3V?tab=repositories" target="_blank"
-                >GitHub</a
-              >
-            </li>
-          </li>  
-                  <!-- DROPDOWN MENU -->
+            <a class="nav-link text-success" href="https://www.linkedin.com/in/monicaaprilhong/"
+              target="_blank">LinkedIn</a>
+          <li class="nav-item">
+            <a class="nav-link text-success" href="https://github.com/M0M0-D3V?tab=repositories"
+              target="_blank">GitHub</a>
+          </li>
+          </li>
+          <!-- DROPDOWN MENU -->
           <li class="nav-item dropdown">
-            <a
-              class="nav-link text-secondary dropdown-toggle"
-              href="#"
-              id="navbarDropdownMenuLink"
-              data-toggle="dropdown"
-              aria-haspopul="true"
-              aria-exapanded="false">Projects Info</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a
-                class="nav-link text-success"
-                href="#"
-                data-toggle="modal"
-                data-target="#meetMarket"
-                >MeetMarket</a
-              >
-              <a
-              class="nav-link text-success"
-              href="#"
-              data-toggle="modal"
-              data-target="#kindWords"
-              >KindWords</a
-            >
-            <a
-            class="nav-link text-success"
-            href="#"
-            data-toggle="modal"
-            data-target="#demonSlayer"
-            >DemonSlayer</a
-          >
-          <a
-          class="nav-link text-success"
-          href="#"
-          data-toggle="modal"
-          data-target="#activityCenter"
-          >Activity Center</a
-        >
-              </div>
+            <a class="nav-link text-secondary dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+              data-toggle="dropdown" aria-haspopul="true" aria-exapanded="false">Projects Info</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="nav-link text-success" href="#" data-toggle="modal" data-target="#meetMarket">MeetMarket</a>
+              <a class="nav-link text-success" href="#" data-toggle="modal" data-target="#kindWords">KindWords</a>
+              <a class="nav-link text-success" href="#" data-toggle="modal" data-target="#demonSlayer">DemonSlayer</a>
+              <a class="nav-link text-success" href="#" data-toggle="modal" data-target="#activityCenter">Activity
+                Center</a>
+            </div>
           </li>
           <li class="nav-item">
-            <a
-              class="nav-link text-warning"
-              href="#"
-              data-toggle="modal"
-              data-target="#contactMe"
-              >Contact Me</a
-            >
+            <a class="nav-link text-warning" href="#" data-toggle="modal" data-target="#contactMe">Contact Me</a>
           </li>
         </ul>
       </div>
     </nav>
 
     <!-- MODAL ABOUT ME-->
-    <div
-      class="modal fade bd-example-modal-lg"
-      id="aboutMe"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="aboutMeTitle"
-      aria-hidden="true"
-    >
+    <div class="modal fade bd-example-modal-lg" id="aboutMe" tabindex="-1" role="dialog" aria-labelledby="aboutMeTitle"
+      aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="aboutMeLongTitle">About Me</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus id iste quas blanditiis sit tempora hic commodi corporis, non fugit sed qui magni a quod tenetur laborum eaque quos amet!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus id iste quas blanditiis sit tempora hic
+            commodi corporis, non fugit sed qui magni a quod tenetur laborum eaque quos amet!
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary btn-sm"
-              data-dismiss="modal"
-            >
+            <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">
               Close
             </button>
           </div>
         </div>
       </div>
     </div>
-<!-- END MODAL ABOUT ME -->
+    <!-- END MODAL ABOUT ME -->
     <!-- MODAL ABOUT MyProjects-->
-    <div
-      class="modal fade bd-example-modal-lg"
-      id="myProjects"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="myProjectsTitle"
-      aria-hidden="true"
-    >
+    <div class="modal fade bd-example-modal-lg" id="myProjects" tabindex="-1" role="dialog"
+      aria-labelledby="myProjectsTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="myProjectsLongTitle">My Group Projects</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
@@ -187,220 +105,165 @@
             <li><a href="#kindwords" data-toggle="tab">KindWords</a></li>
             <li><a href="#demonslayer" data-toggle="tab">DemonSlayer</a></li>
             <li><a href="#activitycenter" data-toggle="tab">ActivityCenter</a></li>
-    </ul>
-      
+          </ul>
+
           <div class="tab-content">
             <div class="tab-pane active" id="meetmarket">
-            
-              <a href="https://github.com/M0M0-D3V/MeetMarket" target="_blank" role="button" class="btn btn-outline-primary btn-sm">View Project on GitHub</a>
-              <iframe src="https://m0m0-d3v.github.io/MeetMarket/" style="border:none;" width="100%" height="100%"></iframe>
-              
-          <!-- <div class="control-group">
+
+              <a href="https://github.com/M0M0-D3V/MeetMarket" target="_blank" role="button"
+                class="btn btn-outline-primary btn-sm">View Project on GitHub</a>
+              <iframe src="https://m0m0-d3v.github.io/MeetMarket/" style="border:none;" width="100%"
+                height="100%"></iframe>
+
+              <!-- <div class="control-group">
             <label class="control-label">Instance Name</label>
             </div> -->
-          </div>
-            
-            <div class="tab-pane" id="kindwords">
-              <a href="https://github.com/M0M0-D3V/KindWords" target="_blank" role="button" class="btn btn-outline-primary btn-sm">View Project on GitHub</a>
-              <iframe src="https://m0m0-d3v.github.io/KindWords/" style="border:none;" width="100%" height="100%"></iframe>
-            </div> 
-    
-    
-            <div class="tab-pane" id="demonslayer">
-              <a href="https://github.com/M0M0-D3V/DemonSlayerUnity" target="_blank" role="button" class="btn btn-outline-primary btn-sm">View Project on GitHub</a>
-              <iframe src="https://m0m0-d3v.github.io/DemonSlayerUnity/" style="border:none;" width="100%" height="100%"></iframe>
-           </div>
+            </div>
 
-           <div class="tab-pane" id="activitycenter">
-            <a href="https://github.com/M0M0-D3V/ActivityCenter" target="_blank" role="button" class="btn btn-outline-primary btn-sm">View Project on GitHub</a>
-            <iframe src="https://m0m0-d3v.github.io/ActivityCenter/" style="border:none;" width="100%" height="100%"></iframe>
-           </div>
+            <div class="tab-pane" id="kindwords">
+              <a href="https://github.com/M0M0-D3V/KindWords" target="_blank" role="button"
+                class="btn btn-outline-primary btn-sm">View Project on GitHub</a>
+              <iframe src="https://m0m0-d3v.github.io/KindWords/" style="border:none;" width="100%"
+                height="100%"></iframe>
+            </div>
+
+
+            <div class="tab-pane" id="demonslayer">
+              <a href="https://github.com/M0M0-D3V/DemonSlayerUnity" target="_blank" role="button"
+                class="btn btn-outline-primary btn-sm">View Project on GitHub</a>
+              <iframe src="https://m0m0-d3v.github.io/DemonSlayerUnity/" style="border:none;" width="100%"
+                height="100%"></iframe>
+            </div>
+
+            <div class="tab-pane" id="activitycenter">
+              <a href="https://github.com/M0M0-D3V/ActivityCenter" target="_blank" role="button"
+                class="btn btn-outline-primary btn-sm">View Project on GitHub</a>
+              <iframe src="https://m0m0-d3v.github.io/ActivityCenter/" style="border:none;" width="100%"
+                height="100%"></iframe>
+            </div>
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary btn-sm"
-              data-dismiss="modal"
-            >
+            <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">
               Close
             </button>
           </div>
         </div>
       </div>
     </div>
-<!-- END MODAL ABOUT MyProjects -->
+    <!-- END MODAL ABOUT MyProjects -->
     <!-- MODAL ABOUT MeetMarket-->
-    <div
-      class="modal fade bd-example-modal-lg"
-      id="meetMarket"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="meetMarketTitle"
-      aria-hidden="true"
-    >
+    <div class="modal fade bd-example-modal-lg" id="meetMarket" tabindex="-1" role="dialog"
+      aria-labelledby="meetMarketTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="meetMarketLongTitle">MeetMarket - Python Django <a href="https://github.com/M0M0-D3V/MeetMarket" target="_blank" role="button" class="btn btn-outline-success btn-sm">View Project on GitHub</a></h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
+            <h5 class="modal-title" id="meetMarketLongTitle">MeetMarket - Python Django <a
+                href="https://github.com/M0M0-D3V/MeetMarket" target="_blank" role="button"
+                class="btn btn-outline-success btn-sm">View Project on GitHub</a></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            
-            <iframe src="https://m0m0-d3v.github.io/MeetMarket/" style="border:none;" width="100%" height="100%"></iframe>
+
+            <iframe src="https://m0m0-d3v.github.io/MeetMarket/" style="border:none;" width="100%"
+              height="100%"></iframe>
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary btn-sm"
-              data-dismiss="modal"
-            >
+            <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">
               Close
             </button>
           </div>
         </div>
       </div>
     </div>
-<!-- END MODAL ABOUT KindWords -->
-<!-- MODAL ABOUT KindWords-->
-    <div
-    class="modal fade bd-example-modal-lg"
-    id="kindWords"
-    tabindex="-1"
-    role="dialog"
-    aria-labelledby="kindWordsTitle"
-    aria-hidden="true"
-  >
-    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="kindWordsLongTitle">KindWords - MERN <a href="https://github.com/M0M0-D3V/KindWords" target="_blank" role="button" class="btn btn-outline-success btn-sm">View Project on GitHub</a></h5>
-          <button
-            type="button"
-            class="close"
-            data-dismiss="modal"
-            aria-label="Close"
-          >
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <iframe src="https://m0m0-d3v.github.io/KindWords/" style="border:none;" width="100%" height="100%"></iframe>
-        </div>
-        <div class="modal-footer">
-          <button
-            type="button"
-            class="btn btn-secondary btn-sm"
-            data-dismiss="modal"
-          >
-            Close
-          </button>
+    <!-- END MODAL ABOUT KindWords -->
+    <!-- MODAL ABOUT KindWords-->
+    <div class="modal fade bd-example-modal-lg" id="kindWords" tabindex="-1" role="dialog"
+      aria-labelledby="kindWordsTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="kindWordsLongTitle">KindWords - MERN <a
+                href="https://github.com/M0M0-D3V/KindWords" target="_blank" role="button"
+                class="btn btn-outline-success btn-sm">View Project on GitHub</a></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <iframe src="https://m0m0-d3v.github.io/KindWords/" style="border:none;" width="100%"
+              height="100%"></iframe>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">
+              Close
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-<!-- END MODAL ABOUT KindWords -->
+    <!-- END MODAL ABOUT KindWords -->
     <!-- MODAL ABOUT DemonSlayer-->
-    <div
-      class="modal fade bd-example-modal-lg"
-      id="demonSlayer"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="demonSlayerTitle"
-      aria-hidden="true"
-    >
+    <div class="modal fade bd-example-modal-lg" id="demonSlayer" tabindex="-1" role="dialog"
+      aria-labelledby="demonSlayerTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="demonSlayerLongTitle">DemonSlayer - C#/Unity <a href="https://github.com/M0M0-D3V/DemonSlayerUnity" target="_blank" role="button" class="btn btn-outline-success btn-sm">View Project on GitHub</a></h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
+            <h5 class="modal-title" id="demonSlayerLongTitle">DemonSlayer - C#/Unity <a
+                href="https://github.com/M0M0-D3V/DemonSlayerUnity" target="_blank" role="button"
+                class="btn btn-outline-success btn-sm">View Project on GitHub</a></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <iframe src="https://m0m0-d3v.github.io/DemonSlayerUnity/" style="border:none;" width="100%" height="100%"></iframe>
+            <iframe src="https://m0m0-d3v.github.io/DemonSlayerUnity/" style="border:none;" width="100%"
+              height="100%"></iframe>
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary btn-sm"
-              data-dismiss="modal"
-            >
+            <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">
               Close
             </button>
           </div>
         </div>
       </div>
     </div>
-<!-- END MODAL ABOUT DemonSlayer -->
+    <!-- END MODAL ABOUT DemonSlayer -->
     <!-- MODAL ABOUT ActivityCenter-->
-    <div
-      class="modal fade bd-example-modal-lg"
-      id="activityCenter"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="activityCenterTitle"
-      aria-hidden="true"
-    >
+    <div class="modal fade bd-example-modal-lg" id="activityCenter" tabindex="-1" role="dialog"
+      aria-labelledby="activityCenterTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="activityCenterLongTitle">Activity Center - C#/.NET <a href="https://github.com/M0M0-D3V/ActivityCenter" target="_blank" role="button" class="btn btn-outline-success btn-sm">View Project on GitHub</a></h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
+            <h5 class="modal-title" id="activityCenterLongTitle">Activity Center - C#/.NET <a
+                href="https://github.com/M0M0-D3V/ActivityCenter" target="_blank" role="button"
+                class="btn btn-outline-success btn-sm">View Project on GitHub</a></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <iframe src="https://m0m0-d3v.github.io/ActivityCenter/" style="border:none;" width="100%" height="100%"></iframe>
+            <iframe src="https://m0m0-d3v.github.io/ActivityCenter/" style="border:none;" width="100%"
+              height="100%"></iframe>
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary btn-sm"
-              data-dismiss="modal"
-            >
+            <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">
               Close
             </button>
           </div>
         </div>
       </div>
     </div>
-<!-- END MODAL ABOUT ActivityCenter -->
-    <!-- MODAL ABOUT ActivityCenter-->
-    <div
-      class="modal fade bd-example-modal-lg"
-      id="contactMe"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="contactMeTitle"
-      aria-hidden="true"
-    >
+    <!-- END MODAL ABOUT ActivityCenter -->
+    <!-- MODAL ABOUT ContactMe-->
+    <div class="modal fade bd-example-modal-lg" id="contactMe" tabindex="-1" role="dialog"
+      aria-labelledby="contactMeTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="contactMeLongTitle">Contact Me <a href="https://github.com/M0M0-D3V/" target="_blank" role="button" class="btn btn-outline-success btn-sm">View Project on GitHub</a></h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
+            <h5 class="modal-title" id="contactMeLongTitle">Contact Me</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
@@ -408,166 +271,119 @@
             FORM HERE
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary btn-sm"
-              data-dismiss="modal"
-            >
+            <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">
               Close
             </button>
           </div>
         </div>
       </div>
     </div>
-<!-- END MODAL ABOUT ActivityCenter -->
+    <!-- END MODAL ABOUT ContactMe -->
 
     <!-- JUMBOTRON -->
     <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-    <div class="row">
-    <div class="col-md-6"><h1 class="display-4">Hello and Welcome!</h1>
-    <p class="lead">
-    Thanks for checking out my portfolio page. Please feel free to look around and if you see anything of interest, or have any questions, please let me know by <a href="#"              data-toggle="modal"
-    data-target="#contactMe">
-      Contacting me.
-    </a> :)
-    </p></div>
-    <div class="col-md-6" style="text-align: center; vertical-align: top;">Picture or video here bloop placeholder
-    <p>Some icons to show what techs I know will be on here soon!</p></div>
-    </div>
-    </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="display-4">Hello and Welcome!</h1>
+            <p class="lead">
+              Thanks for checking out my portfolio page. Please feel free to look around and if you see anything of
+              interest, or have any questions, please let me know by <a href="#" data-toggle="modal"
+                data-target="#contactMe">
+                Contacting me.
+              </a> :)
+            </p>
+          </div>
+          <div class="col-md-6" style="text-align: center; vertical-align: top;">Picture or video here bloop placeholder
+            <p>Some icons to show what techs I know will be on here soon!</p>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- END JUMBOTRON -->
     <div class="container">
-    <h4>Here are some of my group projects:</h4>
-    <hr/>
-    
-    <!-- CAROUSEL -->
-    <div
-    id="carouselExampleCaptions"
-    class="carousel slide"
-    data-ride="carousel"
-    >
-    <ol class="carousel-indicators">
-    <li
-    data-target="#carouselExampleCaptions"
-    data-slide-to="0"
-    class="active"
-    ></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-    </ol>
-    <div class="carousel-inner">
-    <div class="carousel-item active">
-    <a
-    class="nav-link text-primary"
-    href="#"
-    data-toggle="modal"
-    data-target="#meetMarket"
-    >
-    <img
-    src="img/meetmarket.png"
-    class="d-block w-100"
-    alt="meetmarket"
-    /></a>
-    <div class="carousel-caption d-none d-md-block">
-    <!-- SLIDE 1 -->
-    <h5>MeetMarket</h5>
-    <p>CraigsList inspired Peer-to-Peer platform with a facelift</p>
+      <h4>Here are some of my group projects:</h4>
+      <hr />
+
+      <!-- CAROUSEL -->
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a class="nav-link text-primary" href="#" data-toggle="modal" data-target="#meetMarket">
+              <img src="img/meetmarket.png" class="d-block w-100" alt="meetmarket" /></a>
+            <div class="carousel-caption d-none d-md-block">
+              <!-- SLIDE 1 -->
+              <h5>MeetMarket</h5>
+              <p>CraigsList inspired Peer-to-Peer platform with a facelift</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a class="nav-link text-primary" href="#" data-toggle="modal" data-target="#kindWords">
+              <img src="img/kindwords.png" class="d-block w-100" alt="kindwords" />
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+              <!-- SLIDE 2 -->
+              <h5>KindWords</h5>
+              <p>
+                Multi-user message & response system with real time chat features
+                in an immersive environment
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a class="nav-link text-primary" href="#" data-toggle="modal" data-target="#activityCenter">
+              <img src="img/activitycenter.png" class="d-block w-100" alt="activitycenter" />
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+              <!-- SLIDE 3 -->
+              <h5>Activity Center</h5>
+              <p>
+                Community centered calendaring system where users can post and
+                participate in activities
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a class="nav-link text-primary" href="#" data-toggle="modal" data-target="#demonSlayer">
+              <img src="img/demonslayer.png" class="d-block w-100" alt="demonslayer" /></a>
+            <div class="carousel-caption d-none d-md-block">
+              <!-- SLIDE 3 -->
+              <h5>Demon Slayer</h5>
+              <p>
+                Demon Slayer anime inspired 2D Sidescrolling game created with C# and Unity
+              </p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
     </div>
-    </div>
-    <div class="carousel-item">
-    <a
-    class="nav-link text-primary"
-    href="#"
-    data-toggle="modal"
-    data-target="#kindWords"
-    >
-    <img src="img/kindwords.png" class="d-block w-100" alt="kindwords" />
-    </a>
-    <div class="carousel-caption d-none d-md-block">
-    <!-- SLIDE 2 -->
-    <h5>KindWords</h5>
-    <p>
-    Multi-user message & response system with real time chat features
-    in an immersive environment
-    </p>
-    </div>
-    </div>
-    <div class="carousel-item">
-    <a
-    class="nav-link text-primary"
-    href="#"
-    data-toggle="modal"
-    data-target="#activityCenter"
-    >
-    <img src="img/activitycenter.png" class="d-block w-100" alt="activitycenter" />
-    </a>
-    <div class="carousel-caption d-none d-md-block">
-    <!-- SLIDE 3 -->
-    <h5>Activity Center</h5>
-    <p>
-    Community centered calendaring system where users can post and
-    participate in activities
-    </p>
-    </div>
-    </div>
-    <div class="carousel-item">
-    <a
-    class="nav-link text-primary"
-    href="#"
-    data-toggle="modal"
-    data-target="#demonSlayer"
-    >
-    <img src="img/demonslayer.png" class="d-block w-100" alt="demonslayer" /></a>
-    <div class="carousel-caption d-none d-md-block">
-    <!-- SLIDE 3 -->
-    <h5>Demon Slayer</h5>
-    <p>
-    Demon Slayer anime inspired 2D Sidescrolling game created with C# and Unity
-    </p>
-    </div>
-    </div>
-    </div>
-    <a
-    class="carousel-control-prev"
-    href="#carouselExampleCaptions"
-    role="button"
-    data-slide="prev"
-    >
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-    </a>
-    <a
-    class="carousel-control-next"
-    href="#carouselExampleCaptions"
-    role="button"
-    data-slide="next"
-    >
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-    </a>
-    </div>
+    <!-- END CAROUSEL -->
   </div>
-  <!-- END CAROUSEL -->
-  </div>
-    <!-- BOOTSTRAP SCRIPTS -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/script.js"></script>
-  </body>
+  <!-- BOOTSTRAP SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
+  <script src="js/script.js"></script>
+</body>
+
 </html>
