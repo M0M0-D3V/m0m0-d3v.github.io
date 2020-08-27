@@ -22,14 +22,39 @@ body {
   overflow-y: scroll;
   color: #3b413c;
 }
+
+.navbar .dropdown-menu,
 .navbar-dark,
-.bg-dark {
-  background-color: #3b413c;
-}
-.navbar .dropdown-menu {
-  background-color: #3b413c;
+.bg-dark,
+nav {
+  background-color: #3b413c !important;
   color: #94d1be;
+}
+#havbarNav {
+  display: flex !important;
+  justify-content: space-between;
 }
 
 /* colors generated from 
 https://coolors.co/ffffff-3b413c-9db5b2-daf0ee-94d1be */
+
+#initials,
+.navbar-brand {
+  color: #94d1be !important;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.text-warning {
+  color: #daf0ee !important;
+}
+.text-success {
+  color: #9db5b2 !important;
+}
+h1 {
+  text-align: center;
+}
+#info,
+#info p,
+#info a {
+  text-align: left;
+  vertical-align: baseline;
+}
