@@ -3,10 +3,12 @@
   padding: 0;
   /* border: 1px dotted pink; */
 }
+
 body {
   background-color: #3b413c;
   color: #daf0ee;
 }
+
 .jumbotron {
   background-color: #94d1be;
   color: white;
@@ -15,6 +17,7 @@ body {
   /* margin: 0; */
   /* padding: 0; */
 }
+
 .modal-dialog,
 .modal-content {
   /* 80% of window height */
@@ -26,8 +29,17 @@ body {
 .modal-body {
   /* 100% = dialog height, 120px = header + footer */
   max-height: calc(100% - 120px);
-  overflow-y: scroll;
+  overflow-y: auto;
   color: #3b413c;
+  max-width: 100%;
+}
+
+img.aboutmepic {
+  width: 100%;
+  text-align: left;
+  border: 3px solid #3b413c;
+  margin-bottom: 4px;
+
 }
 
 .navbar .dropdown-menu,
@@ -37,6 +49,7 @@ nav {
   background-color: #3b413c !important;
   color: #94d1be;
 }
+
 #havbarNav {
   display: flex !important;
   justify-content: space-between;
@@ -50,32 +63,40 @@ https://coolors.co/ffffff-3b413c-9db5b2-daf0ee-94d1be */
   color: #94d1be !important;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .text-warning {
   color: #daf0ee !important;
 }
+
 .text-success {
   color: #9db5b2 !important;
 }
+
 h1 {
   text-align: center;
 }
+
 #info,
 #info p,
 #info a {
   text-align: left;
   vertical-align: baseline;
 }
+
 .lead {
   text-align: center;
 }
+
 .carousel {
   height: 440px;
 }
+
 .carousel-caption {
   /* background-color: black; */
   /* opacity: 0.5; */
   text-shadow: 2px 2px #3b413c;
 }
+
 /* 
 #carouselExampleCaptions {
   margin-left: 50px;
