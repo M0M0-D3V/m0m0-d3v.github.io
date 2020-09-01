@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)https://m0m0-d3v.github.io/KindWords/ -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  
+  <link rel="stylesheet" href="./KindWords_files/style.css">
+  <script src="./KindWords_files/jquery-1.12.4.min.js.download" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script><script data-dapp-detection="">
+(function() {
+  let alreadyInsertedMetaTag = false
+
+  function __insertDappDetected() {
+    if (!alreadyInsertedMetaTag) {
+      const meta = document.createElement('meta')
+      meta.name = 'dapp-detected'
+      document.head.appendChild(meta)
+      alreadyInsertedMetaTag = true
+    }
+  }
+
+  if (window.hasOwnProperty('web3')) {
+    // Note a closure can't be used for this var because some sites like
+    // www.wnyc.org do a second script execution via eval for some reason.
+    window.__disableDappDetectionInsertion = true
+    // Likely oldWeb3 is undefined and it has a property only because
+    // we defined it. Some sites like wnyc.org are evaling all scripts
+    // that exist again, so this is protection against multiple calls.
+    if (window.web3 === undefined) {
+      return
+    }
+    __insertDappDetected()
+  } else {
+    var oldWeb3 = window.web3
+    Object.defineProperty(window, 'web3', {
+      configurable: true,
+      set: function (val) {
+        if (!window.__disableDappDetectionInsertion)
+          __insertDappDetected()
+        oldWeb3 = val
+      },
+      get: function () {
+        if (!window.__disableDappDetectionInsertion)
+          __insertDappDetected()
+        return oldWeb3
+      }
+    })
+  }
+})()</script>
+  <script src="./KindWords_files/script.js.download"></script>
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>KindWords</title>
+<meta name="generator" content="Jekyll v3.8.7">
+<meta property="og:title" content="KindWords">
+<meta property="og:locale" content="en_US">
+<link rel="canonical" href="https://m0m0-d3v.github.io/KindWords/">
+<meta property="og:url" content="https://m0m0-d3v.github.io/KindWords/">
+<meta property="og:site_name" content="KindWords">
+<script type="application/ld+json">
+{"headline":"KindWords","@type":"WebSite","url":"https://m0m0-d3v.github.io/KindWords/","name":"KindWords","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">KindWords</h1>
+    </header>
+    <div id="container">
+      <p class="tagline"></p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          
+          <a href="https://github.com/M0M0-D3V/KindWords" class="code">View KindWords on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <p><img src="./KindWords_files/kindwordsawwapp.png" alt="alt text" title="kindwordsawwapp"></p>
+
+<h1 id="a-group-project-inspired-by-the-indie-steam-game-called-kindwords-that-brings-people-together-to-write-kind-thoughtful-and-encouraging-letters-to-each-other">A group project inspired by the indie steam game called “KindWords” that brings people together to write kind, thoughtful, and encouraging letters to each other.</h1>
+
+<h4 id="meet-the-team">Meet the team:</h4>
+<ul>
+  <li>Sawyee Beck</li>
+  <li>Levi Blank</li>
+  <li>Patrick Hebert</li>
+  <li>Monica Hong</li>
+</ul>
+
+<h3 id="kindwords-was-built-in-a-weeks-time--3-days-of-planning-and-research-and-4-days-of-coding">KindWords was built in a week’s time- 3 days of planning and research and 4 days of coding.</h3>
+<p>My team was able to achieve the below for <strong>MVP</strong>:</p>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked">Resource Links and User conduct info</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked">COLOR PALETTE FIX</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked">Login/Reg</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked">Socket.io implementation to have live connection
+    <ul class="task-list">
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked">Allow multiple users to chat in real-time</li>
+    </ul>
+  </li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked">Request System
+    <ul class="task-list">
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked">Allow user to create “Requests” for advice</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked">Allow user to View Requests from other users</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked">Allow user to write Replies other user Requests</li>
+    </ul>
+  </li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked">Inbox to receive and view Replies
+    <ul class="task-list">
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked">See history of all Requests made</li>
+    </ul>
+  </li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked">Starfield and general colors picked</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked">Custom Music Player</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked">Strict single page in “/” so that music is uninterrupted</li>
+</ul>
+
+<h1 id="the-below-are-features-in-development-currently">The below are features in development currently.</h1>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled">Advice requesting system revision
+    <ul class="task-list">
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled">Revise Schema / Queries to capture Response message body text</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled">Delete Requests from Inbox history with confirmations</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled">Revise DB Query for View Requests to block requests made by self</li>
+    </ul>
+  </li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled">Moderating System…
+    <ul class="task-list">
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled">Integrate Sentiment Analysis API to gauge emotions and intentions of User post requests and responses to automate a way to moderate without Admin involvement for each case by case scenario which can allow for overall improved quality and growth in community</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled">Admin to moderate as backup</li>
+    </ul>
+  </li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled">Live chat application
+    <ul class="task-list">
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled">Chat message have lifespan of 1 hour and autodeletes from db</li>
+    </ul>
+  </li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled">User Interface / Interaction
+    <ul class="task-list">
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled">Chat application to show/hide when clicking the Button
+        <ul class="task-list">
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled">Chat messages to appear one at a time in even time duration
+            <ul class="task-list">
+              <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled">Add a twinkle and fade effect on chat message text</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled">Logo designing</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled">Coordinating animations</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled">Interactive mascot
+        <ul class="task-list">
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled">alert thanks user for writing a kind letter</li>
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled">alerts user when new message has arrived</li>
+        </ul>
+      </li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled">Ability to save replies to file in a nice formatted pdf or doc so users can take with them outside of the website</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled">Toggle Daytime Theme. HA</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled">Design avatar game feature</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled">Stickers feature or other Thank you Gift idea</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled">Music player improvements</li>
+    </ul>
+  </li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled">OTHERS!</li>
+</ul>
+
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      
+      <p><a href="https://github.com/M0M0-D3V" class="avatar"><img src="./KindWords_files/M0M0-D3V.png" width="48" height="48"></a> <a href="https://github.com/M0M0-D3V">M0M0-D3V</a> maintains <a href="https://github.com/M0M0-D3V/KindWords">KindWords</a></p>
+      
+
+       
+
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section" style="opacity: 0; visibility: hidden;">
+    <a href="https://m0m0-d3v.github.io/KindWords/#top">Scroll to top</a>
+    <a href="https://github.com/M0M0-D3V/KindWords/tarball/master" class="tar">tar</a><a href="https://github.com/M0M0-D3V/KindWords/zipball/master" class="zip">zip</a><a href="https://m0m0-d3v.github.io/KindWords/" class="code">source code</a>
+    <p class="name">A group project inspired by the indie steam game called “KindWords” that brings people together to write kind, thoughtful, and encouraging letters to each other.</p>
+  </div>
+
+  
+
+
+</body></html>
