@@ -1,21 +1,103 @@
 * {
   margin: 0;
   padding: 0;
-  /* border: 1px dotted pink; */
+  border: 1px dotted pink;
 }
 
-body {
-  background-color: #3b413c;
-  color: #daf0ee;
+body, html {
+  /* background-color:   #3b413c; */
+  color: #e9f1f7;
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  font-weight: 400;
+
+}
+nav {
+  display: fixed;
+}
+.img1, .img2, .img3, .img4, .img5 {
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+/* background-attachment:
+fixed = parallaxing
+scroll = normal */
+    background-attachment: fixed;
 }
 
-.jumbotron {
-  background-color: #94d1be;
-  color: white;
-  border-radius: 20px;
-  box-shadow: 5px 5px #333333;
-  /* margin: 0; */
-  /* padding: 0; */
+.img1 {
+  background-image: url('../img/lightbulb2.jpg');
+  min-height: 100%;
+}
+.img2 {
+  background-image: url('../img/webdev.jpg');
+  min-height: 400px;
+}
+.img3 {
+  background-image: url('../img/programming.jpg');
+  min-height: 400px;
+}
+.img4 {
+  background-image: url('../img/image3.jpg');
+  min-height: 400px;
+}
+.img5 {
+  background-image: url('../img/image5.jpg');
+  min-height: 400px;
+}
+
+.section {
+  text-align: center;
+  padding: 50px 80px;
+}
+
+.section-light {
+  background-color: #5d2a42;
+  color: #e9f1f7;
+}
+
+.section-dark {
+  background-color: #5F758E;
+  color: #e9f1f7;
+}
+
+.text{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 26pt;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.text .border {
+  background-color: #5d2a42;
+  color: #e9f1f7;
+  padding: 20px;
+}
+
+.text .border .trans {
+  background-color: transparent;
+}
+.projects {
+  display: flex;
+  /* overflow-x: scroll;
+  white-space: nowrap; */
+  /* height: 400px; */
+  width: 100%;
+  justify-content: center;
+}
+.project {
+  /*  */
+  text-align: left;
+  width: 400px;
+  height: 400px;
 }
 
 .modal-dialog,
@@ -39,24 +121,19 @@ img.aboutmepic {
   text-align: left;
   border: 3px solid #3b413c;
   margin-bottom: 4px;
-
+  
 }
 
-.navbar .dropdown-menu,
-.navbar-dark,
-.bg-dark,
-nav {
-  background-color: #3b413c !important;
-  color: #94d1be;
+.navbar .dropdown-menu:hover,
+.navbar .nav-item:hover,
+nav{
+  background-color: #5F758E !important;
+  color: aliceblue;
 }
 
-#havbarNav {
-  display: flex !important;
-  justify-content: space-between;
-}
 
 /* colors generated from 
-https://coolors.co/ffffff-3b413c-9db5b2-daf0ee-94d1be */
+https://coolors.co/5f758e-bedcfe-ffca3a-ba2c73-85bda6 */
 
 #initials,
 .navbar-brand {
@@ -97,19 +174,9 @@ h1 {
   text-shadow: 2px 2px #3b413c;
 }
 
-/* 
-#carouselExampleCaptions {
-  margin-left: 50px;
-  margin-right: 50px;
+.jumbotron {
+  background-color: #94d1be;
+  color: white;
+  border-radius: 20px;
+  box-shadow: 5px 5px #333333;
 }
-.carousel-control {
-  width: 0%;
-}
-.carousel-control-prev {
-  margin-left: -25px;
-}
-.carousel-control-next {
-  margin-right: -25px;
-}
-.carousel-caption {
-} */
