@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   /* border: 0.5px dotted pink; */
+  box-sizing: border-box;
 }
 
 body, html {
@@ -87,8 +88,9 @@ scroll = normal */
 }
 .projects {
   display: flex;
-  /* overflow-x: scroll;
-  white-space: nowrap; */
+  /* overflow-x: scroll; */
+  /* white-space: nowrap; */
+  /* scroll-behavior: auto; */
   /* height: 400px; */
   width: 100%;
   justify-content: center;
@@ -98,15 +100,20 @@ scroll = normal */
 .project {
   /*  */
   text-align: left;
-  width: 300px;
-  min-height: 300px;
+  width: 400px;
+  min-height: 400px;
   margin-left: 20px;
   margin-bottom: 20px;
   background-color: #E9F1F7;
   border-radius: 12%;
-  padding: 15px;
-  border: 15px dashed #85BDA6;
+  padding: 10px;
+  border: 5px dashed #85BDA6;
+  transition: 0.3s;
+  word-wrap: break-word;
+  /* overflow: hidden; */
+  text-overflow: ellipsis; 
 }
+
 .projects:last-child {
   margin-left: 0px;
 }
@@ -120,10 +127,17 @@ scroll = normal */
 .project p {
   font-size: 14pt;
   color: #5D2A42;
+  margin-bottom: 5px;
+}
 
+.project img {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 .project:hover {
-  border: 15px dashed #FFCA3A;
+  border: 5px dashed #FFCA3A;
+  box-shadow: 10px 10px 80px #FFCA3A;
   transition: 0.3s;
 }
 .project:hover h5 {
