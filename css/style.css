@@ -12,7 +12,7 @@ body, html {
   width: 100%;
   font-family: sans-serif;
   font-weight: 400;
-
+  position: relative;
 }
 nav {
   display: fixed;
@@ -230,4 +230,27 @@ h1 {
   color: white;
   border-radius: 20px;
   box-shadow: 5px 5px #333333;
+}
+
+.container1 {
+  position: absolute;
+  top: 30%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  border: 4px dashed aliceblue;
+  padding: 20px;
+  border-radius: 30%;
+  text-align: center;
+  color: #333;
+}
+.container1 span {
+  font-size: 30pt;
+  font-weight: bold;
+  text-transform:uppercase;
+}
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: 25px;
+  background: #333;
 }
