@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  border: 1px dotted pink;
+  /* border: 0.5px dotted pink; */
 }
 
 body, html {
@@ -92,12 +92,48 @@ scroll = normal */
   /* height: 400px; */
   width: 100%;
   justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .project {
   /*  */
   text-align: left;
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  min-height: 300px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  background-color: #E9F1F7;
+  border-radius: 12%;
+  padding: 15px;
+  border: 15px dashed #85BDA6;
+}
+.projects:last-child {
+  margin-left: 0px;
+}
+.project h5 {
+  font-weight: bold;
+  text-align: center;
+  color: #FFCA3A;
+  text-shadow: 2px 2px #5F758E;
+  text-transform: uppercase;
+}
+.project p {
+  font-size: 14pt;
+  color: #5D2A42;
+
+}
+.project:hover {
+  border: 15px dashed #FFCA3A;
+  transition: 0.3s;
+}
+.project:hover h5 {
+  color: #85BDA6;
+  text-shadow: 2px 2px #5D2A42;
+  transition: 0.3s;
+}
+
+.project:hover p {
+  color: #5F758E;
 }
 
 .modal-dialog,
@@ -127,7 +163,8 @@ img.aboutmepic {
 .navbar .dropdown-menu:hover,
 .navbar .nav-item:hover,
 nav{
-  background-color: #5F758E !important;
+  background-color: #85BDA6 !important;
+  transition: 0.3s;
   color: aliceblue;
 }
 
@@ -137,16 +174,16 @@ https://coolors.co/5f758e-bedcfe-ffca3a-ba2c73-85bda6 */
 
 #initials,
 .navbar-brand {
-  color: #94d1be !important;
+  color: #85BDA6 !important;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .text-warning {
-  color: #daf0ee !important;
+  color: #85BDA6 !important;
 }
 
 .text-success {
-  color: #9db5b2 !important;
+  color: #85BDA6 !important;
 }
 
 h1 {
@@ -175,7 +212,7 @@ h1 {
 }
 
 .jumbotron {
-  background-color: #94d1be;
+  background-color: #85BDA6;
   color: white;
   border-radius: 20px;
   box-shadow: 5px 5px #333333;
