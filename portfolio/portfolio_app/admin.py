@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path, include
 # Register your models here.
-from portfolio_app.models import Project, Message, Image
+from portfolio_app.models import Project, Message, Image, Tech, TeamMember
 
 
 class ProjectAdmin(admin.ModelAdmin):
@@ -23,3 +23,17 @@ class ImageAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Image, ImageAdmin)
+
+
+class TechAdmin(admin.ModelAdmin):
+    pass
+
+
+admin.site.register(Tech, TechAdmin)
+
+
+class TeamMemberAdmin(admin.ModelAdmin):
+    pass
+
+
+admin.site.register(TeamMember, TeamMemberAdmin)
