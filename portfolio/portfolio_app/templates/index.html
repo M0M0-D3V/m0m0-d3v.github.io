@@ -97,56 +97,18 @@
   </div>
 
   <section class="section section-dark projects">
+    {% for project in all_projects %}
     <div class="project">
-      <h5>Meet Market</h5>
-      <img src="{% static 'img/meetmarket.png' %}" />
-      <p>CraigsList inspired Peer-to-Peer platform with a facelift</p>
+      <h5>{{ project.title }}</h5>
+      {% for image in project.images.all %}
+      <img src="{{ image.url }}" />
+      {% endfor %}
+      <p>{{ project.description }}</p>
+        {% for tech in project.techs.all %}
+        <p>{{tech.tech_name}}</p>
+        {% endfor %}
     </div>
-    <div class="project">
-      <h5>Kind Words</h5>
-      <img src="{% static 'img/kindwords.png' %}" />
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, in repudiandae debitis recusandae odio natus
-        laboriosam aliquid odit aut minima possimus repellat consequatur blanditiis itaque voluptatibus earum facilis?
-        Quas, exercitationem.</p>
-    </div>
-    <div class="project">
-      <h5>DemonSlayer</h5>
-      <img src="{% static 'img/demonslayer.png' %}" />
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure similique odio exercitationem minima sapiente
-        repudiandae velit vel architecto itaque, aspernatur assumenda praesentium temporibus placeat inventore rerum
-        odit eos magnam voluptates.</p>
-    </div>
-    <div class="project">
-      <h5>Dev Tracker</h5>
-      <img src="{% static 'img/meetmarket.png' %}" />
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta tempora debitis in dolore voluptate minima
-        placeat quibusdam ab ullam? Numquam ipsa ducimus est consequatur autem sequi optio quis quisquam quod!</p>
-    </div>
-    <div class="project">
-      <h5>Pray With Grace</h5>
-      <img src="{% static 'img/meetmarket.png' %}" />
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta tempora debitis in dolore voluptate minima
-        placeat quibusdam ab ullam? Numquam ipsa ducimus est consequatur autem sequi optio quis quisquam quod!</p>
-    </div>
-    <div class="project">
-      <h5>What Is Your Beef?</h5>
-      <img src="{% static 'img/meetmarket.png' %}" />
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta tempora debitis in dolore voluptate minima
-        placeat quibusdam ab ullam? Numquam ipsa ducimus est consequatur autem sequi optio quis quisquam quod!</p>
-    </div>
-    <div class="project">
-      <h5>Events Planner</h5>
-      <img src="{% static 'img/meetmarket.png' %}" />
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In molestiae atque architecto aliquid, nostrum nisi
-        soluta et quaerat distinctio provident nobis dolorum. Quisquam, quibusdam deserunt sequi dicta impedit
-        praesentium aspernatur.</p>
-    </div>
-    <div class="project">
-      <h5>Team Manager</h5>
-      <img src="{% static 'img/meetmarket.png' %}" />
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta tempora debitis in dolore voluptate minima
-        placeat quibusdam ab ullam? Numquam ipsa ducimus est consequatur autem sequi optio quis quisquam quod!</p>
-    </div>
+    {% endfor %}
   </section>
 
   <div class="img3">

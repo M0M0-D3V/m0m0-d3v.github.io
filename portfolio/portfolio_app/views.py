@@ -1,7 +1,10 @@
 from django.shortcuts import render
-
+from .models import Project, Image, Tech, TeamMember, Message
 # Create your views here.
 
 
 def index(request):
-    return render(request, "index.html")
+    context = {
+        "all_projects": Project.objects.all()
+    }
+    return render(request, "index.html", context)
