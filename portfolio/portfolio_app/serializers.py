@@ -6,7 +6,7 @@ class ProjectSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Project
         fields = ('title', 'description', 'demo_link', 'github_link',
-                  'publish_date', 'my_position')
+                  'publish_date', 'my_position', 'images', 'techs', 'members')
 
 
 class ImageSerializer(serializers.HyperlinkedModelSerializer):
@@ -16,12 +16,16 @@ class ImageSerializer(serializers.HyperlinkedModelSerializer):
 
 
 class TechSerializer(serializers.HyperlinkedModelSerializer):
+    projects = ProjectSerializer(many=True, read_only=True)
+
     class Meta:
         model: Tech
         fields = ('tech_name', 'icon_img_url', 'projects')
 
 
 class TeamMemberSerializer(serializers.HyperlinkedModelSerializer):
+    projects = ProjectSerializer(many=True, read_only=True)
+
     class Meta:
         model: TeamMember
         fields = ('member_name', 'member_role', 'projects')
