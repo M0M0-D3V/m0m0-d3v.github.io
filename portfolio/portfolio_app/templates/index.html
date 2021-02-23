@@ -96,20 +96,23 @@
     </div>
   </div>
 
-  <section class="section section-dark projects">
-    {% for project in all_projects %}
-    <div class="project">
-      <h5>{{ project.title }}</h5>
-      {% for image in project.images.all %}
-      <img src="{{ image.url }}" />
-      {% endfor %}
-      <p>{{ project.description }}</p>
-        {% for tech in project.techs.all %}
-        <p>{{tech.tech_name}}</p>
+  <div class="section section-dark techwrapper">
+    <div class="showtech"></div>
+    <section class="projects">
+      {% for project in all_projects %}
+      <div class="project">
+        <h5>{{ project.title }}</h5>
+        {% for image in project.images.all %}
+        <img src="{{ image.url }}" />
         {% endfor %}
-    </div>
-    {% endfor %}
-  </section>
+        <p>{{ project.description }}</p>
+          {% for tech in project.techs.all %}
+          <p>{{tech.tech_name}}</p>
+          {% endfor %}
+      </div>
+      {% endfor %}
+    </section>
+  </div>
 
   <div class="img3">
     <div class="text">

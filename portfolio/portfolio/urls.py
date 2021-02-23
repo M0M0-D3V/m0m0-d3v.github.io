@@ -15,8 +15,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from rest_framework import routers
+from portfolio_app import views
+
+
+router = routers.DefaultRouter()
+router.register(r'', views.ProjectViewSet)
+router.register(r'images', views.ImageViewSet)
+router.register(r'techs', views.TechViewSet)
+router.register(r'teammembers', views.TeamMemberViewSet)
+router.register(r'messages', views.MessageViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('portfolio_app.urls')),
+    path('projects/', include(router.urls)),
 ]

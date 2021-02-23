@@ -27,4 +27,12 @@ $(document).ready(function () {
       selector: true,
     }
   ).play();
+
+  // function for hover / show
+  // techwrapper > showtech, projects > project
+  // hover over project name to display on the left
+  $(".project").hover(function () {
+    // var targetId = $(this).attr("id");
+    console.log($(this));
+  });
 });

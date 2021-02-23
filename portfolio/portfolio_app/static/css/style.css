@@ -86,22 +86,33 @@ scroll = normal */
 .text .border .trans {
   background-color: transparent;
 }
+.techwrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  max-height: 400px;
+}
+.showtech {
+  width: 50%;
+  border-radius: 12%;
+  border: 5px solid #E9F1F7;
+  padding: 10px;
+}
 .projects {
   display: flex;
   /* overflow-x: scroll; */
   /* white-space: nowrap; */
   /* scroll-behavior: auto; */
-  /* height: 400px; */
-  width: 100%;
+  width: 50%;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+  overflow-y: scroll;
 }
 .project {
   /*  */
   text-align: left;
   width: 400px;
-  min-height: 400px;
   margin-left: 20px;
   margin-bottom: 20px;
   background-color: #E9F1F7;
@@ -110,7 +121,6 @@ scroll = normal */
   border: 5px solid #85BDA6;
   transition: 0.3s;
   word-wrap: break-word;
-  /* overflow: hidden; */
   text-overflow: ellipsis; 
 }
 
