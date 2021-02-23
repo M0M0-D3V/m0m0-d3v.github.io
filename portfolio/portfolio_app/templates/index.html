@@ -100,7 +100,7 @@
     <div class="showtech"></div>
     <section class="projects">
       {% for project in all_projects %}
-      <div class="project">
+      <div id="proj{{ project.id }}" class="project">
         <h5>{{ project.title }}</h5>
         {% for image in project.images.all %}
         <img src="{{ image.url }}" />
