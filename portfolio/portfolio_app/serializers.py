@@ -7,6 +7,7 @@ class ProjectSerializer(serializers.HyperlinkedModelSerializer):
         model = Project
         fields = ('title', 'description', 'demo_link', 'github_link',
                   'publish_date', 'my_position', 'images', 'techs', 'members')
+        depth = 1
 
 
 class ImageSerializer(serializers.HyperlinkedModelSerializer):

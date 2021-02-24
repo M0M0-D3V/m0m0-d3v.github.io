@@ -90,7 +90,8 @@ scroll = normal */
   width: 100%;
   display: flex;
   justify-content: space-around;
-  max-height: 400px;
+  /* max-height: 400px; */
+  height: auto;
 }
 .showtech {
   width: 50%;
@@ -109,12 +110,9 @@ scroll = normal */
   flex-wrap: wrap;
   overflow-y: scroll;
 }
-.project {
+.project, .showtech {
   /*  */
   text-align: left;
-  width: 400px;
-  margin-left: 20px;
-  margin-bottom: 20px;
   background-color: #E9F1F7;
   border-radius: 12%;
   padding: 10px;
@@ -123,25 +121,34 @@ scroll = normal */
   word-wrap: break-word;
   text-overflow: ellipsis; 
 }
-
+.project {
+  width: 400px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.showtech button {
+  text-align: center;
+  display: inline-block;
+  margin: auto;
+}
 .projects:last-child {
   margin-left: 0px;
 }
-.project h5 {
+.project h5, .showtech h5, .showtech h2 {
   font-weight: bold;
   text-align: center;
   color: #FFCA3A;
   text-shadow: 2px 2px #5F758E;
   text-transform: uppercase;
 }
-.project p {
+.project p, .showtech p {
   font-size: 14pt;
   color: #5D2A42;
   margin-bottom: 5px;
 }
 
-.project img {
-  width: 100%;
+.project img, .showtech img {
+  width: 250px;
   margin-top: 5px;
   margin-bottom: 5px;
 }

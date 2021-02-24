@@ -34,6 +34,38 @@ $(document).ready(function () {
   $(".project").hover(function () {
     var targetId = $(this).attr("id");
     console.log(targetId);
-    $(".showtech").html(targetId);
+
+    var url = `http://localhost:8000/api/projects/${targetId}`;
+    console.log(url);
+
+    $.get(
+      url,
+      function (res) {
+        var infoStr = "";
+        infoStr += "<h2>" + res.data.attributes.title + "</h2>";
+        if (res.data.attributes.demo_link.length > 1) {
+          infoStr +=
+            "<button><a href=" +
+            res.data.attributes.demo_link +
+            " target='_blank'>Demo</a></button>";
+        }
+        if (res.data.attributes.github_link.length > 1) {
+          infoStr +=
+            "<button><a href=" +
+            res.data.attributes.github_link +
+            " target='_blank'>GitHub</a></button><BR>";
+        }
+        for (var i = 0; i < res.data.attributes.images.length; i++) {
+          infoStr += "<img src=" + res.data.attributes.images[i].url + " />";
+        }
+        infoStr += "<p>" + res.data.attributes.description + "</p>";
+        for (var i = 0; i < res.data.attributes.techs.length; i++) {
+          infoStr +=
+            "<small>" + res.data.attributes.techs[i].tech_name + " </small>";
+        }
+        $(".showtech").html(infoStr);
+      },
+      "json"
+    );
   });
 });
