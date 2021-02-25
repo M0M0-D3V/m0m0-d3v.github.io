@@ -133,10 +133,18 @@ scroll = normal */
   display: inline-block;
   margin: auto;
 }
+ul li.techie {
+  display: flex;
+}
+li.techie {
+  color: #5F758E;
+  margin-left: 30px;
+  text-align: center;
+}
 .projects:last-child {
   margin-left: 0px;
 }
-.project h5, .showtech h5, .showtech h2 {
+.project h5, .showtech h5, .showtech h2, .showtech h6 {
   font-weight: bold;
   text-align: center;
   color: #FFCA3A;

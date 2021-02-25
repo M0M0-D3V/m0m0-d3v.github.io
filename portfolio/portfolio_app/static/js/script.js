@@ -59,10 +59,15 @@ $(document).ready(function () {
           infoStr += "<img src=" + res.data.attributes.images[i].url + " />";
         }
         infoStr += "<p>" + res.data.attributes.description + "</p>";
+        infoStr += "<h6>Techs Used:</h6><ul>";
         for (var i = 0; i < res.data.attributes.techs.length; i++) {
           infoStr +=
-            "<small>" + res.data.attributes.techs[i].tech_name + " </small>";
+            "<li class='techie'>" +
+            res.data.attributes.techs[i].tech_name +
+            " </li>";
         }
+        infoStr += "</ul>";
+
         $(".showtech").html(infoStr);
       },
       "json"
