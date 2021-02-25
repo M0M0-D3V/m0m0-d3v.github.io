@@ -13,9 +13,11 @@ body, html {
   font-family: sans-serif;
   font-weight: 400;
   position: relative;
+  scroll-behavior: smooth;
 }
 nav {
   display: fixed;
+  height: 60px;
 }
 .img1, .img2, .img3, .img4, .img5 {
     position: relative;
